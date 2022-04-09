@@ -1,0 +1,50 @@
+.parent {
+    display: flex;
+}
+
+.avatar {
+    margin-bottom: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 1px solid;
+    border-color: #377c47;
+}
+
+.message {
+    position: relative;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px 10px 10px 0;
+    background: #377c47;
+    color: #ffffff;
+    text-align: left;
+}
+
+.message::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(60px at top left, transparent 49%, rgb(55, 124, 71) 51%) no-repeat right bottom;
+}
+
+.name {
+    margin-top: 0;
+    font-size: 20px;
+    color: #9e75c4;
+    font-weight: 400;
+    text-align: left;
+}
+
+.time {
+    margin-bottom: 0;
+    margin-left: 0;
+    font-size: 15px;
+    color: #a8d9b3;
+    flex-grow: 1;
+    text-align: right;
+}
