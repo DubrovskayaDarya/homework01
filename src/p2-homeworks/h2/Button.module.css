@@ -1,0 +1,45 @@
+.button {
+    background-color: #4CAF50;
+    border: 2px solid #ffffff;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 10px;
+}
+.buttonAll {
+    background-color: rgba(71, 71, 231, 0.77);
+    border: 2px solid #ffffff;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+}
+.buttonHigh {
+    background-color: rgba(100, 100, 231, 0.77);
+    border: 2px solid #ffffff;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+}
+.buttonMid {
+    background-color: rgba(137, 137, 220, 0.77);
+    border: 2px solid #ffffff;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+}
+.buttonLow {
+    background-color: rgba(177, 177, 236, 0.77);
+    border: 2px solid #ffffff;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+}

@@ -1,21 +1,22 @@
 import React from 'react'
+import {MouseEvent} from "react";
+import {AffairType} from "./HW2";
+import s from './Button.module.css'
 
 type AffairPropsType = {
     // key не нужно типизировать
-    affair: any // need to fix any
-    deleteAffairCallback: any // need to fix any
+    affair: AffairType
+    deleteAffairCallback: (_id: number) => void
 }
 
-function Affair(props: AffairPropsType) {
-    const deleteCallback = () => {}// need to fix
-
+export function Affair(props: AffairPropsType) {
+    const deleteHandler = (e: MouseEvent<HTMLButtonElement>) => {
+        props.deleteAffairCallback(props.affair._id)
+    }
     return (
         <div>
-            // show some text
-
-            <button onClick={deleteCallback}>X</button>
+            <button className={s.button} onClick={deleteHandler}>X</button>
+            {props.affair.name}  -  {props.affair.priority}
         </div>
     )
 }
-
-export default Affair

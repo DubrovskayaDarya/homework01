@@ -1,36 +1,46 @@
 import React from 'react'
-import Affair from './Affair'
-import {AffairType} from './HW2'
+import {Affair} from "./Affair";
+import {AffairType, FilterType} from './HW2'
+import {MouseEvent} from "react";
+import s from './Button.module.css'
 
 type AffairsPropsType = { // need to fix any
-    data: any
+    data: AffairType[]
     setFilter: any
-    deleteAffairCallback: any
+    deleteAffairCallback: (_id: number) => void
 }
 
 function Affairs(props: AffairsPropsType) {
-    const mappedAffairs = props.data.map((a: AffairType) => (
+    const mappedAffairs = props.data.map((a) => (
         <Affair // should work
             key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
             affair={a}
-            deleteAffairCallback={props.deleteAffairCallback}
+            deleteAffairCallback={() => props.deleteAffairCallback(a._id)}
         />
     ))
 
-    const setAll = () => {} // need to fix
-    const setHigh = () => {}
-    const setMiddle = () => {}
-    const setLow = () => {}
+    const setAll = (e: MouseEvent<HTMLButtonElement>) => {
+        props.setFilter('all')
+    } // need to fix
+    const setHigh = (e: MouseEvent<HTMLButtonElement>) => {
+        props.setFilter('high')
+    }
+    const setMiddle = (e: MouseEvent<HTMLButtonElement>) => {
+        props.setFilter('middle')
+    }
+    const setLow = (e: MouseEvent<HTMLButtonElement>) => {
+        props.setFilter('low')
+    }
 
     return (
         <div>
 
             {mappedAffairs}
 
-            <button onClick={setAll}>All</button>
-            <button onClick={setHigh}>High</button>
-            <button onClick={setMiddle}>Middle</button>
-            <button onClick={setLow}>Low</button>
+            <button className={s.buttonAll} onClick={setAll}>All</button>
+            <button className={s.buttonHigh} onClick={setHigh}>High</button>
+            <button className={s.buttonMid} onClick={setMiddle}>Middle</button>
+            <button className={s.buttonLow} onClick={setLow}>Low</button>
         </div>
     )
 }

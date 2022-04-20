@@ -15,6 +15,7 @@ function Message(props: MessageType) {
             <div>
                 <img className={s.avatar} src={props.avatar}/>
             </div>
+            <div className={s.stupidButWorks}>' '</div>
             <div className={s.message}>
                 <div className={s.name}>{props.name}</div>
                 {props.message}
