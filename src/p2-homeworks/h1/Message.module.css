@@ -49,6 +49,6 @@
     flex-grow: 1;
     text-align: right;
 }
-.stupidButWorks {
-    color: white;
+.avatarWrapper {
+    margin-right: 2%;
 }

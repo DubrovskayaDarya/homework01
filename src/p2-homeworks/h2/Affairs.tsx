@@ -11,11 +11,11 @@ type AffairsPropsType = { // need to fix any
 }
 
 function Affairs(props: AffairsPropsType) {
-    const mappedAffairs = props.data.map((a) => (
+    const mappedAffairs = props.data.map((element) => (
         <Affair // should work
-            key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
-            affair={a}
-            deleteAffairCallback={() => props.deleteAffairCallback(a._id)}
+            key={element._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
+            affair={element}
+            deleteAffairCallback={() => props.deleteAffairCallback(element._id)}
         />
     ))
 
