@@ -24,6 +24,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                 onChange={setNameCallback}
                 className={inputClass}
                 onKeyPress={onKeyPressHandler}
+                placeholder={"Enter your name"}
             />
             <span>{error}</span>
             <button className={s.button} onClick={addUser}> Add </button>
