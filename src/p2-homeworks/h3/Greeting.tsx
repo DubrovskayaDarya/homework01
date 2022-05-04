@@ -27,7 +27,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                 placeholder={"Enter your name"}
             />
             <span>{error}</span>
-            <button className={s.button} onClick={addUser}> Add </button>
+            <button className={s.button} onClick={addUser}> Add</button>
             <span>{totalUsers}</span>
         </div>
     )

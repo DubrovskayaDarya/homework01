@@ -1,5 +1,19 @@
 .checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 7px;
+    background-color: #de3a3a;
+    border-radius:10%;}
 
+#checkbox:checked {
+    background-color: #46c046;
+}
+#checkbox:checked:before {
+    content:"13";
+    color: white;
+    padding: initial;
+    font-weight: bold;
 }
 
 .spanClassName {

@@ -1,7 +1,12 @@
 .default {
-
+    border: 1px solid rgba(109, 109, 185, 0.77);
+    background-color: #7db2c2;
+    color: #ffffff;
+    padding: 3px 5px;
 }
 
 .red {
-    background: red;
+    background: #ee4444;
+    border: 1px solid rgba(252, 0, 0, 0.77);
+    color: #ffffff;
 }

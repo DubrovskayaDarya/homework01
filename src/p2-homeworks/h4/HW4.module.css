@@ -1,5 +1,6 @@
 .blue {
-    border-bottom: 5px solid blue;
+    border: white;
+    border-bottom: 3px solid #6a6aa8;
 }
 
 .column {
