@@ -11,23 +11,25 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .active {
-    display: block;
-    width: 10%;
     color: #e85129;
     text-decoration: none;
-    margin-right: 5%;
+    text-align: center;
     border: 1px solid;
     background-color: #eab5a4;
+    width: 300px;
+    height: 35px;
 }
 
-.default-link{
-    display: block;
-    width: 10%;
+.default-link {
     color: rgba(65, 66, 65, 0.96);
     text-decoration: none;
-    margin-right: 5%;
+    text-align: center;
     border: 1px solid;
     background-color: #a19e9e;
+    width: 300px;
+    height: 35px;
 }
+
 
