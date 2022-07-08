@@ -1,0 +1,14 @@
+.table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    background-color: #e9c7f3;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    margin: 4px;
+}
+
+.td{
+    width: 150px;
+    text-align: center;
+    color: rgba(28, 28, 117, 0.77);
+}
